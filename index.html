@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Form øvelse</title>
+  <link rel="stylesheet" href="css/demo.css" />
+  <!-- Ret i nedenståendde stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="banner">
+    <div class="logo">
+      <a href="#0">Logo</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <h2>Kontakt os</h2>
+        <p>
+          Udfyld kontaktformularen for at kontakte os. Vi glæder os til at
+          høre fra dig.
+        </p>
+      </header>
+
+      <form>
+        <!-- Formular-indhold -->
+        <div class="form-felt">
+          <label for="first_name">Fornavn</label>
+          <input id="first_name" name="fname" type="text" required />
+        </div>
+        <div class="form-felt">
+          <label for="last_name">Efternavn</label>
+          <input id="last_name" name="lname" type="text" required />
+        </div>
+        <div class="form-felt">
+          <label for="email">Email</label>
+          <input id="email" name="fname" type="email" required />
+        </div>
+        <div class="form-felt">
+          <label for="Rolle">Rolle</label>
+          <select name="Rolle" id="Rolle">
+            <option>Vælg Rolle</option>
+            <option value="Studerende">Studerende</option>
+            <option value="Underviser">Underviser</option>
+          </select>
+        </div>
+        <div class="form-felt">
+          <label>Din besked</label>
+          <textarea name="text_area" id="text_area" cols="50" rows="10"></textarea>
+
+        </div>
+        <div class="Indsend">
+          <button type="submit">Indsend</button>
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
